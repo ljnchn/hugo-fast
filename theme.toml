@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "hugo-qing"
+license = "MIT"
+licenselink = "https://github.com/ljnchn/hugo-qing/blob/master/LICENSE.md"
+description = "a pure theme"
+homepage = "https://github.com/ljnchn/hugo-qing"
+tags = ["qing", "pure"]
+features = ["", ""]
+min_version = 0.01
+
+[author]
+  name = "ljnchn"
+  homepage = "https://ljnchn.github.io/"

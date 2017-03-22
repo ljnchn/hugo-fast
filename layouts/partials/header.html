@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+<meta charset="utf-8">
+{{ .Hugo.Generator }}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- DNS 预加载 -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//cdn.bootcss.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+<link href="/css/poole.css" rel="stylesheet">
+<link href="/css/lanyon.css" rel="stylesheet">
+<link href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" rel="alternate">
+
+<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+<style>
+	header {
+		background-color: #263d36;
+		background-image: url("/img/cover.jpg");
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		line-height: 1.2;
+		padding: 10vw 2em;
+		text-align: center;
+	}
+	main{
+		margin: 0 auto;
+		padding: 4em 1em;
+		max-width: 50em;
+	}
+
+	main h2::before {
+		color: #666;
+		content:"## ";
+	}
+	main h3::before {
+		color: #666;
+		content:"### ";
+	}
+
+	/*blockquote {
+		background:#f9f9f9;
+		border-left:10px solid #ccc;
+		margin:1.5em 10px;
+		padding:.5em 10px;
+		quotes:"\201C""\201D""\2018""\2019";
+	}
+	blockquote:before {
+		color:#ccc;
+		content:open-quote;
+		font-size:4em;
+		line-height:.1em;
+		margin-right:.25em;
+		vertical-align:-.4em;
+	}
+	blockquote p {
+		display:inline;
+	}*/
+</style>
+</head>
+<body>
+
+	<header role="banner">
+		<div class="header-logo">
+			<!-- <a href="/"><img src="{{ .Site.Params.logo }}" width="60" height="60" alt="{{ .Site.Title }}"></a> -->
+		</div>
+		{{ if eq $isHomePage true }}<h1 class="site-title">{{ .Site.Title }}</h1>{{ end }}
+	</header>
