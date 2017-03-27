@@ -1,11 +1,13 @@
 {{ partial "header.html" . }}
+{{ partial "cover.html" . }}
 
-	<main role="main">
+	<div class="container content">
 	{{ range first 10 .Data.Pages }}
-		<div class="summary">
+		<div class="posts">
 		 {{ .Render "summary"}}
 		</div>
 	{{ end }}
-	</main>
+	{{ partial "pager.html" . }}
+	</div>
 
 {{ partial "footer.html" . }}

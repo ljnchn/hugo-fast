@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-	<main role="main">
+	<div class="container content">
 		{{ range first 10 .Data.Pages }}
 		  <div class="summary">
 		    <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
@@ -12,6 +12,6 @@
 		  </div>
 		  {{ end }}
 		{{ end }}
-	</main>
+	</div>
 
 {{ partial "footer.html" . }}
