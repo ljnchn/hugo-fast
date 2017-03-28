@@ -12,6 +12,14 @@
 				{{ .Content }}
 			</section>
 		</article>
+		<hr>
+		<div class="comment">
+			<div class="comments">
+				<div id="disqus_thread">
+					{{ partial "disqus.html" . }}
+				</div>
+			</div>
+		</div>
 	</div>
 
 {{ partial "footer.html" . }}

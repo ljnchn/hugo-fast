@@ -7,84 +7,14 @@
 <!-- DNS 预加载 -->
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.bootcss.com">
-<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
-<!-- <link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css"> -->
 <link href="//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-<!-- <link href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css" rel="stylesheet"> -->
 <link href="/css/poole.css" rel="stylesheet">
 <link href="/css/lanyon.css" rel="stylesheet">
 <link href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" rel="alternate">
+<link href="/css/custom.css" rel="stylesheet">
 
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
-<style>
-	.cover {
-		background-color: #263d36;
-		/*background-image: url("/img/cover.jpg");*/
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 30vh;
-		text-align: center;
-	}
-
-	.title {
-		height: 100%;
-		display: -webkit-flex;
-		display:         flex;
-		-webkit-align-items: center;
-				align-items: center;
-		-webkit-justify-content: center;
-				justify-content: center;
-	}
-
-	.title a {
-		color: #FFF;
-		font-size: 2rem;
-		text-decoration:none;
-	}
-	main{
-		margin: 0 auto;
-		padding: 4em 1em;
-		max-width: 50em;
-	}
-
-	/*main h2::before {
-		color: #00A388;
-		content:"## ";
-	}
-	main h3::before {
-		color: #00A388;
-		content:"### ";
-	}*/
-
-	.read-more-link {
-		/*text-align: right;*/
-	}
-
-	footer {
-		text-align: center;
-	}
-
-	/*blockquote {
-		background:#f9f9f9;
-		border-left:10px solid #ccc;
-		margin:1.5em 10px;
-		padding:.5em 10px;
-		quotes:"\201C""\201D""\2018""\2019";
-	}
-	blockquote:before {
-		color:#ccc;
-		content:open-quote;
-		font-size:4em;
-		line-height:.1em;
-		margin-right:.25em;
-		vertical-align:-.4em;
-	}
-	blockquote p {
-		display:inline;
-	}*/
-</style>
 </head>
 <body>

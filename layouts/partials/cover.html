@@ -1,10 +1,8 @@
 <header role="banner">
-    <div class="cover" style="background-image:url('/img/{{ with .Params.coverUrl }}{{ . }}{{ else }}cover.jpg{{ end }}')">
-        <div class="title">
-            <a href="/">{{ .Site.Title }}</a>
-            <!-- <div>
-                <span>{{ .Site.Params.description }}</span>
-            </div> -->
-        </div>
+    {{ if .Site.Params.Cover }}
+    <div class="cover" style="background-image:url('/img/{{ with .Params.coverUrl }}{{ . }}{{ else }}{{ .Site.Params.Cover }}{{ end }}')">
+        <h1 class="title" ><a href="/">{{ .Site.Title }}</a></h1>
+        <span>{{ .Site.Params.Motto }}</span>
     </div>
+    {{ end }}
 </header>
