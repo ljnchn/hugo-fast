@@ -4,13 +4,13 @@
 - colour #00A388 #79BD8F #962D3E
 
 ### 其他小功能
-- [ ]代码高亮
-- [ ]pjax
-- [ ]图片加载优化
-- [ ]DNS 预加载
-- [ ]click 优化（fastclick,InstantClick）
-- [ ]headroom
-- [ ]pwa
+- [ ] 代码高亮
+- [ ] pjax
+- [ ] 图片加载优化
+- [ ] DNS 预加载
+- [ ] click 优化（fastclick,InstantClick）
+- [ ] headroom
+- [ ] pwa
 
 ### web 服务器设置
 - [ ] 使用 caddy 作为web服务器
