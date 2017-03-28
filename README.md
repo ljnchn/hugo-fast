@@ -1,4 +1,4 @@
-# hugo 主题 hugo-qing
+# hugo 主题 hugo-fast
 
 ### 决定布局排版颜色
 - colour #00A388 #79BD8F #962D3E
@@ -13,8 +13,8 @@
 - [ ]pwa
 
 ### web 服务器设置
-- [ ]使用 caddy 作为web服务器
-- [ ]hugo 插件
-- [ ]自动https
-- [ ]git 自动部署
-- [ ]图片自动 rewrite 新浪微博图床
+- [ ] 使用 caddy 作为web服务器
+- [ ] hugo 插件
+- [ ] 自动https
+- [ ] git 自动部署
+- [ ] 图片自动 rewrite 新浪微博图床
